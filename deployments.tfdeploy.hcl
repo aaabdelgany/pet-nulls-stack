@@ -8,10 +8,3 @@ deployment "simple" {
     instances        = 7
   }
 }
-
-deployment "complex" {
-  inputs = {
-    prefix           = "complex"
-    instances        = 7
-  }
-}
