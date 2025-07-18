@@ -53,7 +53,7 @@ component "nulls" {
 
   providers = {
     null = provider.null.this
-    time = provider.null.this
+    time = provider.time.this
   }
 }
 
