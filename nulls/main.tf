@@ -7,6 +7,10 @@ terraform {
       source = "hashicorp/null"
       version = "3.1.1"
     }
+    time = {
+      source = "hashicorp/time"
+      version = "0.13.1"
+    }
   }
 }
 
@@ -18,7 +22,12 @@ variable "instances" {
   type = number
 }
 
+resource "time_sleep" "wait_1_minute" {
+  create_duration = "60s"
+}
+
 resource "null_resource" "this" {
+  depends_on = [time_sleep.wait_1_minute]
   count = var.instances
 
   triggers = {
