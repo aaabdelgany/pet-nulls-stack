@@ -67,5 +67,6 @@ component "nils" {
 
   providers = {
     null = provider.null.this
+    time = provider.time.this
   }
 }
