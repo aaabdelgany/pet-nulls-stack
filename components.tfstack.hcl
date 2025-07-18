@@ -28,6 +28,7 @@ required_providers {
 
 provider "random" "this" {}
 provider "null" "this" {}
+provider "time" "this" {}
 
 component "pet" {
   source = "./pet"
@@ -68,5 +69,3 @@ component "nils" {
     null = provider.null.this
   }
 }
-
-# dummy comment to trigger new plan
