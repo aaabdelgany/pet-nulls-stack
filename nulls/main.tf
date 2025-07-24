@@ -23,7 +23,7 @@ variable "instances" {
 }
 
 resource "time_sleep" "wait_1_minute" {
-  create_duration = "60s"
+  create_duration = "300s"
 }
 
 resource "null_resource" "this" {
