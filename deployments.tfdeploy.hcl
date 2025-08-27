@@ -6,12 +6,12 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 7
   }
+
+  destroy = true
   deployment_group = deployment_group.custom1
 }
 
-deployment_group "custom1" {
-  auto_approve_checks = [deployment_auto_approve.no_destroy]
-}
+deployment_group "custom1" {}
 
 deployment "complex" {
   inputs = {
