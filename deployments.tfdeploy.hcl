@@ -6,10 +6,13 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 7
   }
-  deployment_group = deployment_group.customweeeeeee
+  deployment_group = deployment_group.custom1
+  deployment_group = deployment_group.custom2
 }
 
-deployment_group "customweeeeeee" {}
+deployment_group "custom1" {}
+
+deployment_group "custom2" {}
 
 deployment "complex" {
   inputs = {
