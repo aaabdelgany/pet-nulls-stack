@@ -9,7 +9,7 @@ deployment "simple" {
   deployment_group = deployment_group.custom
 }
 
-deployment_group "custom" {}
+deployment_group "customweeeeeee" {}
 
 deployment "complex" {
   inputs = {
