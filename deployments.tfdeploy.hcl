@@ -7,18 +7,17 @@ deployment "simple" {
     instances        = 7
   }
 
-  destroy = true
   deployment_group = deployment_group.custom1
 }
 
 deployment_group "custom1" {}
 
-deployment "complex" {
-  inputs = {
-    prefix           = "complex"
-    instances        = 7
-  }
-}
+#deployment "complex" {
+#  inputs = {
+#    prefix           = "complex"
+#    instances        = 7
+#  }
+#}
 
 
 deployment_auto_approve "no_destroy" {
