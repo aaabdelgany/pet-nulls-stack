@@ -12,17 +12,11 @@ variable "instances" {
 required_providers {
   random = {
     source  = "tfcdev-edbf8d57.ngrok.io/abdutest/random"
-    version = "~> 3.5.1"
-  }
-
-  null = {
-    source  = "hashicorp/null"
-    version = "~> 3.2.2"
+    version = "~> 0.4.1"
   }
 }
 
 provider "random" "this" {}
-provider "null" "this" {}
 
 component "pet" {
   source = "./pet"
@@ -33,34 +27,5 @@ component "pet" {
 
   providers = {
     random = provider.random.this
-    null = provider.nulls.this
   }
 }
-
-component "nulls" {
-  source = "./nulls"
-
-  inputs = {
-    pet       = component.pet.name
-    instances = var.instances
-  }
-
-  providers = {
-    null = provider.null.this
-  }
-}
-
-component "nils" {
-  source = "./nulls"
-
-  inputs = {
-    pet = component.pet.name
-    instances = component.pet.number
-  }
-
-  providers = {
-    null = provider.null.this
-  }
-}
-
-# dummy comment to trigger new plan
