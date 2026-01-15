@@ -1,3 +1,21 @@
 {
-  "terraform_source_bundle": 1
+  "terraform_source_bundle": 1,
+  "packages": [
+    {
+      "source": "https://tfcdev-edbf8d57.ngrok.io/_archivist/v1/object/dmF1bHQ6djE6S1N5TDUrMVZtWVJ5bjV5MTM3N3dyN0dVODRjbXJjbkZJYXlRcHNTNENucytLR0dTaXg1ZmFyanRUSlFqTkljWnVGY3FwYk9PbUx1dWV6L1RkME50ZDQzTW5aUU8vUXh2dVRkM2cya2ZsQWRzZkl3b0p1TFZZNlRwMWIzOUtUOHBEbHFoQkJGZ0tSaThnQW5wNGhxcHFnMVVMcnhEN1RmZm41czBKR2pWU2xsajk3Q2VPS0F3bTA1RjdXbGd4eEt3TmlBSEtBUHNzMmdFeDdGWjZxbFg0R0xpY1JDZ3BuTXE2VWRqNjNyWVJKWUhxTjFpdUhrYkNweFVpbjJCVjNOVDQydm8zSTJEb1gzYTRhVzhxRUh2MGI3a01WbzNLR3FrMHVpZkJKbjR1MTlFQTBzS0ZvcnJ3R285dllTbXBOd05PeEhWQ0g3MzhuRXU0VnQ5SlQ2MmJOYU9teVU9?archive=tgz",
+      "local": "s80iIC-4Fr7nweiPXdJ2z-zI3m-WL6PfYFEjrwPs2LA",
+      "meta": {}
+    }
+  ],
+  "registry": [
+    {
+      "source": "tfcdev-edbf8d57.ngrok.io/abdutest/module/random",
+      "versions": {
+        "0.4.1": {
+          "source": "https://tfcdev-edbf8d57.ngrok.io/_archivist/v1/object/dmF1bHQ6djE6S1N5TDUrMVZtWVJ5bjV5MTM3N3dyN0dVODRjbXJjbkZJYXlRcHNTNENucytLR0dTaXg1ZmFyanRUSlFqTkljWnVGY3FwYk9PbUx1dWV6L1RkME50ZDQzTW5aUU8vUXh2dVRkM2cya2ZsQWRzZkl3b0p1TFZZNlRwMWIzOUtUOHBEbHFoQkJGZ0tSaThnQW5wNGhxcHFnMVVMcnhEN1RmZm41czBKR2pWU2xsajk3Q2VPS0F3bTA1RjdXbGd4eEt3TmlBSEtBUHNzMmdFeDdGWjZxbFg0R0xpY1JDZ3BuTXE2VWRqNjNyWVJKWUhxTjFpdUhrYkNweFVpbjJCVjNOVDQydm8zSTJEb1gzYTRhVzhxRUh2MGI3a01WbzNLR3FrMHVpZkJKbjR1MTlFQTBzS0ZvcnJ3R285dllTbXBOd05PeEhWQ0g3MzhuRXU0VnQ5SlQ2MmJOYU9teVU9?archive=tgz",
+          "deprecation": null
+        }
+      }
+    }
+  ]
 }
