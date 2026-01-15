@@ -14,25 +14,17 @@ variable "prefix" {
   type = string
 }
 
-resource "random_pet" "this" {
+module "random" {
+  source  = "tfcdev-edbf8d57.ngrok.io/abdutest/module/random"
+  version = "0.4.1"
+  
   prefix = var.prefix
-  length = 1
-}
-
-resource "random_integer" "numbah" {
-    min = 1
-    max = 9
-}
-
-resource "random_pet" "random_prefix" {
-  prefix = random_pet.this.id
-  length = 3
 }
 
 output "name" {
-  value = random_pet.this.id
+  value = module.random.name
 }
 
 output "number" {
-  value = random_integer.numbah.result
+  value = module.random.number
 }
