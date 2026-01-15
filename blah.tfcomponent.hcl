@@ -9,7 +9,6 @@ variable "instances" {
   type = number
 }
 
-
 component "pet" {
   source = "./pet"
 }
