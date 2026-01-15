@@ -11,7 +11,7 @@ variable "instances" {
 
 required_providers {
   random = {
-    source  = "tfcdev-edbf8d57.ngrok.io/abdutest/module/random"
+    source  = "tfcdev-edbf8d57.ngrok.io/abdutest/random"
     version = "~> 3.5.1"
   }
 
