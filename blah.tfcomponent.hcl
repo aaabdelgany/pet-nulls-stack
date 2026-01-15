@@ -9,6 +9,18 @@ variable "instances" {
   type = number
 }
 
+required_providers {
+  random = {
+    source = "hashicorp/random"
+    version = "3.8.0"
+  }
+}
+
+provider "random" "this" {}
+
 component "pet" {
   source = "./pet"
+  providers = {
+    random = provider.random.this
+  }
 }
