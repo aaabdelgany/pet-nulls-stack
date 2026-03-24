@@ -44,11 +44,17 @@ function parseArgs(argv) {
 }
 
 function renderDeployment(n, instances) {
+  const label = `simple-generated-${n}`;
   return [
-    `deployment "simple-generated-${n}" {`,
+    `deployment_group "${label}" {`,
+    `  auto_approve_checks = [deployment_auto_approve.auto_approve_all]`,
+    `}`,
+    ``,
+    `deployment "${label}" {`,
+    `  deployment_group = deployment_group.${label}`,
     `  inputs = {`,
-    `    prefix           = "simple-generated-${n}"`,
-    `    instances        = ${instances}`,
+    `    prefix    = "${label}"`,
+    `    instances = ${instances}`,
     `  }`,
     `}`,
   ].join('\n');
