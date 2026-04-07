@@ -6,6 +6,7 @@ deployment "simple" {
     prefix           = "simple"
     instances        = 7
   }
+diags=true
 }
 
 deployment "complex" {
