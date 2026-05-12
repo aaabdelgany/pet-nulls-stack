@@ -1,16 +1,20 @@
 # Copyright (c) HashiCorp, Inc.
 # SPDX-License-Identifier: MPL-2.0
 
+store "varset" "prefix_vars" {
+  id      = "varset-yqJEQx5zd1oqNM5j"
+}
+
 deployment "simple" {
   inputs = {
-    prefix           = "simple"
-    instances        = 7
+    prefix    = store.varset.prefix_vars.simple_prefix
+    instances = 7
   }
 }
 
 deployment "complex" {
   inputs = {
-    prefix           = "complex"
-    instances        = 7
+    prefix    = store.varset.prefix_vars.complex_prefix
+    instances = 7
   }
 }
