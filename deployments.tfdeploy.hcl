@@ -3,6 +3,7 @@
 
 store "varset" "prefix_vars" {
   id      = "varset-yqJEQx5zd1oqNM5j"
+  category = "terraform"
 }
 
 deployment "simple" {
