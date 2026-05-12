@@ -8,14 +8,14 @@ store "varset" "prefix_vars" {
 
 deployment "simple" {
   inputs = {
-    prefix    = store.varset.prefix_vars.simple_prefix
+    prefix    = store.varset.prefix_vars.stable.simple_prefix
     instances = 7
   }
 }
 
 deployment "complex" {
   inputs = {
-    prefix    = store.varset.prefix_vars.complex_prefix
+    prefix    = store.varset.prefix_vars.stable.complex_prefix
     instances = 7
   }
 }
