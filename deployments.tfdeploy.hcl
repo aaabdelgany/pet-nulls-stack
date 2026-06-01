@@ -2,7 +2,7 @@
 # SPDX-License-Identifier: MPL-2.0
 
 store "varset" "prefix_vars" {
-  id      = "varset-yqJEQx5zd1oqNM5j"
+  id      = "varset-qKiLk9dRa3Ri91Re"
   category = "terraform"
 }
 
