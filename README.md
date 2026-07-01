@@ -23,3 +23,4 @@ Terraform Stacks and a GitHub account._
 2. **Create a new stack** in Terraform Cloud and connect it to your forked configuration repository.
 3. **"Provision" away!** Remember, this is a state-only example with no external effects.
    
+    
