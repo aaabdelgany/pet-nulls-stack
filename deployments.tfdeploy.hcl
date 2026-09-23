@@ -147,3 +147,10 @@ deployment "simple-generated-20" {
     instances = 10
   }
 }
+
+deployment "simple-generated-21" {
+  inputs = {
+    prefix    = "simple-generated-21"
+    instances = 10
+  }
+}
